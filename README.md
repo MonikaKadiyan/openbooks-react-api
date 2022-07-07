@@ -68,3 +68,69 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Technical questions
+
+Please answer the following questions in a markdown file called Answers to technical questions.md.
+
+1. How long did you spend on the coding assignment?
+   - I spent near about 8-10 hours in total.
+
+a. What would you add to your solution if you had more time? - I can improve the UI. - I can include Context API since books data is used in many component at multiple levels to prevent props drilling. - More validations on buttons and search and error handling
+
+b. If you didn't spend much time on the coding test, then use this as an opportunity to explain what you would add. - NA
+
+2. What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
+
+###
+
+````const [books, setBooks] = React.useState();
+    const [isLoading, setIsLoading] = React.useState(null);
+    const BASE_URL = "http://openlibrary.org/search.json?q=";
+    const urlBuilder = (title) => {
+    const encodedTitle = encodeURI(title).replace(/%20/g, "+");
+    return `${BASE_URL}` + `${encodedTitle}`;
+  }; ```
+
+````
+
+    const sortByLastPublishDate = () => {'
+    let sortedBooks = [];
+
+    // filter the books with publish dates
+    let booksWithPublishDates = books.filter((book) => book.publish_year);
+    // filter the books with non publish dates
+    let booksWithNotPublishDates = books.filter((book) => !book.publish_year);
+    // sort the books with publish dates
+    sortedBooks = booksWithPublishDates.sort((a, b) =>
+      Math.max(...a.publish_year) - (Math.max(b.publish_year))
+    );
+    // append the non sorted books
+    setBooks([...sortedBooks, ...booksWithNotPublishDates]);
+
+};
+
+```
+
+3. How would you track down a performance issue in production? Have you ever had to do this?
+  I will see the performance in lighthouse and see the different aspects - how HTML, CSS and JS is loading. Time for initial paint. If lazy loading can be used. Image sizes. build size, use of unnecessary npm packages, removing heavy packages if required
+
+4. How would you improve the API that you just used?
+  - Lots of missing fields in data
+
+5. Please describe yourself using correctly formatted JSON.
+{
+  "name": "Monika Rani",
+  "myself": "I am a self taught React developer with an experience of 3 plus years under my belt. I am very enthusiastic and passionate about web development. I like to remain upto date with lates web dev trends. My hobbies includes movies, travelling and pets. I have two beautiful husikies",
+  "skillsSet": [
+    "React",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Redux",
+    "AWS"
+  ],
+  "role": "React Developer",
+  "company": "Telus Digital"
+}
+```
