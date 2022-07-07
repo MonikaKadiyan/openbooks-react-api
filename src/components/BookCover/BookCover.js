@@ -13,7 +13,13 @@ export default function BookCover({ book }) {
   imageUri = `https://covers.openlibrary.org/b/isbn/${book.isbn[0]}-M.jpg`
   return (
     <div className="bookCover">
-      <img className="bookImage" height="243px" width="180px" src={imageUri} />
+      <img
+        className="bookImage"
+        height="243px"
+        width="180px"
+        src={imageUri}
+        alt="bookImage"
+      />
     </div>
   )
 }
