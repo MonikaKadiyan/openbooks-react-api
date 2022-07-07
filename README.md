@@ -110,27 +110,29 @@ b. If you didn't spend much time on the coding test, then use this as an opportu
 
 };
 
-```
-
 3. How would you track down a performance issue in production? Have you ever had to do this?
-  I will see the performance in lighthouse and see the different aspects - how HTML, CSS and JS is loading. Time for initial paint. If lazy loading can be used. Image sizes. build size, use of unnecessary npm packages, removing heavy packages if required
+   I will see the performance in lighthouse and see the different aspects - how HTML, CSS and JS is loading. Time for initial paint. If lazy loading can be used. Image sizes. build size, use of unnecessary npm packages, removing heavy packages if required
 
 4. How would you improve the API that you just used?
-  - Lots of missing fields in data
+
+- Lots of missing fields in data
 
 5. Please describe yourself using correctly formatted JSON.
-{
-  "name": "Monika Rani",
-  "myself": "I am a self taught React developer with an experience of 3 plus years under my belt. I am very enthusiastic and passionate about web development. I like to remain upto date with lates web dev trends. My hobbies includes movies, travelling and pets. I have two beautiful husikies",
-  "skillsSet": [
-    "React",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Redux",
-    "AWS"
-  ],
-  "role": "React Developer",
-  "company": "Telus Digital"
-}
+   {
+   "name": "Monika Rani",
+   "myself": "I am a self taught React developer with an experience of 3 plus years under my belt. I am very enthusiastic and passionate about web development. I like to remain upto date with lates web dev trends. My hobbies includes movies, travelling and pets. I have two beautiful husikies",
+   "skillsSet": [
+   "React",
+   "HTML",
+   "CSS",
+   "JavaScript",
+   "Redux",
+   "AWS"
+   ],
+   "role": "React Developer",
+   "company": "Telus Digital"
+   }
+
+```
+
 ```
