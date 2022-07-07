@@ -1,0 +1,18 @@
+.authorName {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  .authorContainer {
+    display: flex;
+    flex-wrap: wrap;
+    .authorFormat {
+      display: flex;
+      .msg {
+        font-size: 16px;
+        padding-right: 2px;
+      }
+      .authorSpace {
+        padding-right: 3px;
+      }
+    }
+  }
+}

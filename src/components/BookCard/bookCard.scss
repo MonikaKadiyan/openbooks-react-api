@@ -1,0 +1,33 @@
+.bookCard {
+  width: 500px;
+  background-color: grey;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  .topContainer {
+    display: flex;
+    .letContainer {
+      padding: 20px;
+      width: 200px;
+    }
+    .rightContainer {
+      padding: 20px;
+      padding-bottom: 10;
+      width: 200px;
+    }
+  }
+  .bottomContainer {
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bookCard{
+    width: 300px;
+    .topContainer{
+      flex-direction: column;
+    }
+  }
+}

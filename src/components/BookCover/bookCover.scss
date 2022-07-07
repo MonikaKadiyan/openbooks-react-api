@@ -1,0 +1,15 @@
+.bookCover {
+  .bookImage {
+    height: 243px;
+    width: 180px;
+  }
+}
+.no-book-cover {
+  height: 243px;
+  width: 180px;
+  background-color: lightsteelblue;
+  .noCoverMsg {
+    color: black;
+    padding: 15px;
+  }
+}

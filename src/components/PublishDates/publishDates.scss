@@ -1,0 +1,16 @@
+.publishDates{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        .dateFormat{
+            margin-right: 3px;
+            display: flex;
+                .dateSpace{
+                    width: 15px;
+                }
+            }
+    }
+}
